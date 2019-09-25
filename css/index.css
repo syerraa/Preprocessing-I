@@ -134,3 +134,76 @@ html,
 body {
   height: 100%;
 }
+.displayspace {
+  display: flex;
+  justify-content: space-evenly;
+}
+.displaycolumn {
+  display: flex;
+  flex-direction: column;
+}
+.textalign {
+  text-align: center;
+}
+.displaycenter {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 960px;
+  margin: auto;
+}
+.container nav {
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+.container header nav a {
+  text-decoration: none;
+  color: Black;
+}
+.syerra {
+  padding: 20px;
+  margin: -10px -10px 0px 570px;
+}
+h1 {
+  font-size: 70px;
+  text-align: center;
+}
+.main-content {
+  width: 500px;
+  margin: -330px -1px 250px 40px;
+    padding: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.main-content .text-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-content .text-content h2 {
+  font-size: 45px;
+  text-align: center;
+  margin:10px 10px 10px 10px;
+}
+.main-content .text-content p {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+.main-content .text-content button {
+  border: 1px solid black;
+  margin: 10px 10px 10px 10px;
+}
+.middle-content {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+}
+.middle-content h2 {
+  font-size: 40px;
+  padding:10px;
+  text-align:center;
+}

@@ -56,4 +56,94 @@ table {
 html, body {
     height: 100%;
 }
+@backgroundGrey:grey;
+@fontsize:70px;
+@color:Black;
+.displayspace{
+display:flex;
+justify-content:space-evenly;
+}
+.displaycolumn{
+	display:flex;
+	flex-direction:column;
+}
+@fontsize2:45px;
+.textalign{
+	text-align:center;
+}
+@font-family:Alamari;
+.displaycenter{
+	display:flex;
+	justify-content:center;
+}
 
+//  starts here
+.container{
+	// display:flex;
+	// justify-content:center;
+	width:960px;
+	margin:auto;
+
+	// margin:auto;
+	nav{ 
+	width:100%;
+	.displayspace();
+	display:flex;
+
+	margin-top:35px;
+	margin-bottom:40px;
+	}
+	header nav a{
+	text-decoration:none;
+	color:@color;
+	}	
+}
+	.syerra{
+	padding: 20px;
+	margin: -10px -10px 0px 570px;
+	}
+	h1{
+	font-size:@fontsize;
+	.textalign();
+	}
+.main-content{
+	width:500px;
+    margin: -330px -1px 250px 40px;	
+	border:1px solid black;
+	padding:10px 10px 10px 10px;
+	.displaycolumn();
+.text-content{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+	.text-content h2 {
+	font-size:@fontsize2;
+	.textalign();	
+	}
+	.text-content p {
+		font-family:@font-family;
+		.textalign();
+	}
+	.text-content button {
+		border:1px solid black;
+		margin:10px 10px 10px 10px;
+		// display:flex;
+		// align-content:center;
+	}
+}
+.middle-content{
+	width:800px;
+	display:flex;
+	flex-direction:row;
+.text-content2{
+	display:flex;
+	
+}	
+	h2{
+		font-size:@fontsize2;
+	}
+	p{
+		font
+	}
+}
