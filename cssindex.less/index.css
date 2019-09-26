@@ -150,7 +150,7 @@ body {
   justify-content: center;
 }
 .container {
-  width: 1000px;
+  width: 960px;
   margin: auto;
 }
 .container nav {
@@ -202,17 +202,11 @@ h1 {
   flex-direction: row;
 }
 .middle-content .text-content2 {
-  margin: -59px -29px 24px -20px;
-}
-.middle-content p {
-  font-size: 20px;
+  margin: -59px -79px 14px -20px;
 }
 .middle-content h2 {
-  margin-bottom: 10px;
-  text-align: center;
   font-size: 45px;
-  padding: 10px 10px 10px 10px;
-  margin: -10px -10px 0px -180px;
+  text-align: center;
 }
 .middle-content .text-content2 p {
   text-align: center;
@@ -220,45 +214,9 @@ h1 {
   margin: 40px 120px -10px 0px;
 }
 .middle-content .text-content2 li {
-  font-size: 20px;
   padding: 10px 10px 10px 10px;
   margin: 0px -90px 0px 30px;
 }
 .bottom-content {
   width: 860px;
-}
-.bottom-content .text-content3 table {
-  width: 1000px;
-  margin: -70px 0px 20px 120px;
-}
-.bottom-content h2 {
-  font-size: 45px;
-  text-align: center;
-  padding: 10px 20px 101px 40px;
-  color: Grey;
-}
-.bottom-content .text-content3 {
-  margin: -130px -220px -110px -130px;
-}
-.bottom-content .text-content3 table th {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 10px;
-  margin: 10px 10px 10px 10px;
-}
-.bottom-content th {
-  font-size: 20px;
-}
-@media only screen and (max-width: 500px) {
-  .container {
-    width: 450px;
-  }
-  .syerra {
-    display: none;
-  }
-  .middlecontent {
-    width: 450px;
-    display: flex;
-    justify-content: column;
-  }
 }
