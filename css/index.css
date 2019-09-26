@@ -153,20 +153,52 @@ body {
   width: 1000px;
   margin: auto;
 }
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 500px;
+    margin: auto;
+  }
+}
 .container nav {
   width: 100%;
-  justify-content: space-evenly;
   display: flex;
+  justify-content: space-evenly;
   margin-top: 35px;
   margin-bottom: 40px;
+}
+@media only screen and (max-width: 500px) {
+  .container nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 490px;
+    margin: auto;
+  }
 }
 .container header nav a {
   text-decoration: none;
   color: Black;
 }
+@media only screen and (max-width: 500px) {
+  .container header nav a {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    width: 490px;
+  }
+}
 .syerra {
   padding: 20px;
   margin: -10px -10px 0px 570px;
+}
+@media only screen and (max-width: 500px) {
+  .syerra {
+    width: 490px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 10px 10px 15px;
+  }
 }
 h1 {
   font-size: 70px;
@@ -180,10 +212,24 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (max-width: 500px) {
+  .main-content {
+    width: 480px;
+    margin: 0px -50px 80px 21px;
+    padding: -21px -20px 10px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .main-content .text-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media only screen and (max-width: 500px) {
+  .main-content .text-content {
+    width: 480px;
+  }
 }
 .main-content .text-content h2 {
   font-size: 45px;
@@ -201,11 +247,31 @@ h1 {
   display: flex;
   flex-direction: row;
 }
+@media only screen and (max-width: 500px) {
+  .middle-content {
+    width: 490px;
+    Display: flex;
+    flex-direction: column;
+  }
+}
 .middle-content .text-content2 {
   margin: -59px -29px 24px -20px;
 }
+@media only screen and (max-width: 500px) {
+  .middle-content .text-content2 {
+    padding: 40px 210px 40px 10px;
+    margin: -99px -139px 4px 0px;
+  }
+}
 .middle-content p {
   font-size: 20px;
+}
+@media only screen and (max-width: 500px) {
+  .middle-content p {
+    width: 490px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+  }
 }
 .middle-content h2 {
   margin-bottom: 10px;
@@ -213,6 +279,11 @@ h1 {
   font-size: 45px;
   padding: 10px 10px 10px 10px;
   margin: -10px -10px 0px -180px;
+}
+@media only screen and (max-width: 500px) {
+  .middle-content h2 {
+    text-align: center;
+  }
 }
 .middle-content .text-content2 p {
   text-align: center;
@@ -224,12 +295,31 @@ h1 {
   padding: 10px 10px 10px 10px;
   margin: 0px -90px 0px 30px;
 }
+@media only screen and (max-width: 500px) {
+  .middle-content .text-content2 li {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .bottom-content {
   width: 860px;
+}
+@media only screen and (max-width: 500px) {
+  .bottom-content {
+    width: 480px;
+    margin: 81px 19px 10px 0px;
+    padding: 20px 190px 0px 30px;
+  }
 }
 .bottom-content .text-content3 table {
   width: 1000px;
   margin: -70px 0px 20px 120px;
+}
+@media only screen and (max-width: 500px) {
+  .bottom-content .text-content3 table {
+    width: 480px;
+  }
 }
 .bottom-content h2 {
   font-size: 45px;
@@ -248,17 +338,4 @@ h1 {
 }
 .bottom-content th {
   font-size: 20px;
-}
-@media only screen and (max-width: 500px) {
-  .container {
-    width: 450px;
-  }
-  .syerra {
-    display: none;
-  }
-  .middlecontent {
-    width: 450px;
-    display: flex;
-    justify-content: column;
-  }
 }
