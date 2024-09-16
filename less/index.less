@@ -56,4 +56,219 @@ table {
 html, body {
     height: 100%;
 }
+// variables
+@backgroundblack:#36454f;
+@fontsize:70px;
+@color:Black;
+@fontsize2:45px;
+@color2:Grey;
+@fontsize3:30px;
+
+// mixins
+.displayspace{
+display:flex;
+justify-content:space-evenly;
+}
+.displaycolumn{
+	display:flex;
+	flex-direction:column;
+}
+.textalign{
+	text-align:center;
+}
+.displaycenter{
+	display:flex;
+	justify-content:center;
+}
+
+
+//  starts here 
+.container{
+	@media only screen and (max-width : 500px){
+		width:500px;
+		margin:auto;
+	}
+	width:1000px;
+	margin:auto;
+	nav{ 
+		@media only screen and (max-width : 500px){
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			width:490px;
+			margin:auto;
+		}
+		width:100%;
+		.displayspace();
+		margin-top:35px;
+		margin-bottom:40px;
+	}
+	header nav a{
+		text-decoration:none;
+		color:@color;
+		@media only screen and (max-width : 500px){
+		padding:10px 10px 10px 10px;
+		.textalign();
+		border-bottom:1px solid grey;
+		width:490px;
+		}
+	}
+	
+}
+.syerra{
+	@media only screen and (max-width : 500px){
+		width:490px;
+		display:flex;
+		flex-direction:column;
+		padding:10px 10px 10px 10px;
+		margin: 0px 10px 10px 15px;
+	}
+	padding: 20px;
+	margin: -10px -10px 0px 570px;
+}
+	h1{
+		font-size:@fontsize;
+		.textalign();
+	}
+.main-content{
+	@media only screen and (max-width : 500px){
+		width: 480px;
+		margin: 0px -50px 80px 21px;
+		padding: -21px -20px 10px 10px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	width:500px;
+    margin: -330px -1px 250px 40px;	
+	border:1px solid black;
+	padding:10px 10px 10px 10px;
+	.displaycolumn();
+	.text-content{ 
+		@media only screen and (max-width : 500px){
+			width:480px;
+			
+		}
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+	}	
+	.text-content2 h2 {
+		@media only screen and (max-width: 500px){
+			border:1px solid black;
+		}
+		font-size:@fontsize2;
+		.textalign();	
+	}
+	.text-content p {
+		.textalign();
+	}
+	.text-content button {
+		border:1px solid black;
+		margin:10px 10px 10px 10px;
+		// display:flex;
+		// align-content:center;
+	}
+}
+.middle-content{
+	@media only screen and (max-width : 500px){
+		width:490px;
+		Display:flex;
+		flex-direction:column;
+	}
+	width:800px;
+	display:flex;
+	flex-direction:row;
+	.text-content2{ 
+		@media only screen and (max-width : 500px){
+			padding: 40px 210px 40px 10px;
+			margin: -99px -139px 4px 0px;
+		}
+		margin: -59px -29px 24px -20px;
+		// border: 1px solid black;
+		// border-sizing:border-box;
+		// width:400px;
+	}
+	.text-content2 h2 {
+		@media only screen and (max-width: 500px){
+			border:1px solid black;
+		}
+		font-size:@fontsize2;
+		.textalign();	
+	}
+	p {
+		@media only screen and (max-width : 500px){
+			width:490px;
+			margin:10px 10px 10px 10px;
+			padding:10px 10px 10px 10px;
+		}
+		 font-size:20px;
+		//  .textalign();
+	}
+	h2{ 
+		@media only screen and (max-width : 500px){
+			text-align:center;
+		}
+		margin-bottom:10px;
+		.textalign();
+		font-size:@fontsize2;
+		padding:10px 10px 10px 10px;
+		margin: -10px -10px 0px -180px;
+	}
+	.text-content2 p{
+		.textalign();
+		padding: 40px 120px 40px 80px;
+		margin: 40px 120px -10px 0px;
+		
+	}
+	.text-content2 li{
+		@media only screen and (max-width : 500px){
+		.textalign();
+		display:flex;
+		flex-direction:column;
+		}
+		font-size:20px;
+		padding:10px 10px 10px 10px;
+		margin: 0px -90px 0px 30px;
+	}
+	
+}
+
+.bottom-content{
+	@media only screen and (max-width : 500px){
+		width: 480px;
+    	margin: 81px 19px 10px 0px;
+   		padding: 20px 190px 0px 30px;
+	}
+	width:860px;
+	.text-content3 table{
+		@media only screen and (max-width : 500px){
+			width:480px;
+		}
+		width:1000px;
+		margin: -70px 0px 20px 120px;
+	}
+	h2{
+		font-size:@fontsize2;
+		.textalign();
+		padding: 10px 20px 101px 40px;
+		color:@color2;
+	}
+	.text-content3{
+	    margin: -130px -220px -110px -130px;
+
+	}
+	.text-content3 table th {
+		border: 1px solid black;
+		border-collapse:collapse;
+		padding:10px;
+		margin:10px 10px 10px 10px;
+
+	}
+
+	th{
+		font-size: 20px;
+	
+	}
+}
 
